@@ -3,7 +3,6 @@
 <head>
     <head>
         {% load static %}
-        {% load external_urls%}
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <meta name="description" content="" />
@@ -38,19 +37,13 @@
                 <p class="lead mb-0">Mi papá se llama {{familiar1.nombre}}, nació el {{familiar1.cumpleaños}} y tiene {{familiar1.edad}} es ing en sistemas, y uno de mis ejemplos a seguir</p>
             </div>
         </div>
+        </div>
+        </div>
             <div class="row g-0">
-            <div class="col-lg-6 order-lg-2 text-white showcase-img" style="background-image: url({% static 'assets/img/ayayayaytamakogod.gif' %})"></div>
+            <div class="col-lg-6 order-lg-2 text-white showcase-img" style="background-image: url({% static 'assets/img/mama.jpg' %})"></div>
             <div class="col-lg-6 order-lg-1 my-auto showcase-text">
-               <h2>Kitashirakawa Tamako</h2>
-               <p class="lead mb-0">Tamako Kitashirakawa was born to Mamedai and Hinako. Since birth, she lived across from Mochizō's family. According to Tamako, she and Mochizō have been together since infancy, though much of their earlier childhood consisted of him teasing her in some way or another.</p>
-            </div>
-        </div>
-        </div>
-            <div class="row g-0">
-            <div class="col-lg-6 order text-white showcase-img" style="background-image: url({% static 'assets/img/mama.jpg' %})"></div>
-            <div class="col-lg-6 order my-auto showcase-text">
                 <h2>Mi mamá</h2>
-                <p class="lead mb-0">Mi mamá se llama {{familiar2.nombre}}nació el {{familiar2.cumpleaños}}y tiene {{familiar2.edad}}, ella project manager pero también estudio ing en sistemas, otro de mis ejemplos a seguir</p>
+                <p class="lead mb-0">Mi mamá se llama {{familiar2.nombre}} nació el {{familiar2.cumpleaños}} y tiene {{familiar2.edad}}, ella project manager pero también estudio ing en sistemas, otro de mis ejemplos a seguir</p>
         </div>
 </div>
 
@@ -79,7 +72,7 @@
                             <a href="#!"><i class="bi-facebook fs-3"></i></a>
                         </li>
                         <li class="list-inline-item me-4">
-                            <a href="{% external_url 'https://twitter.com/ethanorozco2' %}"><i class="bi-twitter fs-3"></i></a>
+                            <a href="#!"><i class="bi-twitter fs-3"></i></a>
                         </li>
                         <li class="list-inline-item">
                             <a href="#!"><i class="bi-instagram fs-3"></i></a>
