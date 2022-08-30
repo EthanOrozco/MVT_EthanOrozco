@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <head>
+        {% load static %}
+        {% load external_urls%}
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Landing Page - Start Bootstrap Theme</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="{% static 'assets/favicon.ico' %}" />
+        <!-- Bootstrap icons-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" type="text/css" />
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="{% static '/css/styles.css' %}" rel="stylesheet" />
+</head>
+<body>
+        <!-- Navigation-->
+        <nav class="navbar navbar-light bg-light static-top"> 
+            <div class="container">
+                <a class="btn btn-danger" href="{% url 'FamiliaresInicio' %}">Inicio</a>
+                <a class="btn btn-info" href="{% url 'FamiliaresInfo' %}">info</a>
+                <a class="navbar-brand" href="#!">cuadro</a>
+                <a class="navbar-brand" href="#!">Clima</a>
+                <a class="btn btn-primary" href="#signup">Sign Up</a>
+            </div>
+        </nav>
+        <section class="showcase">
+            <div class="container-fluid p-0">
+        <div class="row g-0">
+            <div class="col-lg-6 text-white showcase-img" style="background-image: url({% static 'assets/img/Cesar-Orozco.jpg' %})"></div>
+            <div class="col-lg-6 my-auto showcase-text">
+                <h2>Mi papá</h2>
+                <p class="lead mb-0">Mi papá se llama {{familiar1.nombre}}, nació el {{familiar1.cumpleaños}} y tiene {{familiar1.edad}} es ing en sistemas, y uno de mis ejemplos a seguir</p>
+            </div>
+        </div>
+            <div class="row g-0">
+            <div class="col-lg-6 order-lg-2 text-white showcase-img" style="background-image: url({% static 'assets/img/ayayayaytamakogod.gif' %})"></div>
+            <div class="col-lg-6 order-lg-1 my-auto showcase-text">
+               <h2>Kitashirakawa Tamako</h2>
+               <p class="lead mb-0">Tamako Kitashirakawa was born to Mamedai and Hinako. Since birth, she lived across from Mochizō's family. According to Tamako, she and Mochizō have been together since infancy, though much of their earlier childhood consisted of him teasing her in some way or another.</p>
+            </div>
+        </div>
+        </div>
+            <div class="row g-0">
+            <div class="col-lg-6 order text-white showcase-img" style="background-image: url({% static 'assets/img/mama.jpg' %})"></div>
+            <div class="col-lg-6 order my-auto showcase-text">
+                <h2>Mi mamá</h2>
+                <p class="lead mb-0">Mi mamá se llama {{familiar2.nombre}}nació el {{familiar2.cumpleaños}}y tiene {{familiar2.edad}}, ella project manager pero también estudio ing en sistemas, otro de mis ejemplos a seguir</p>
+        </div>
+</div>
+
+<br>
+    Hermano: nombre {{familiar3.nombre}}, cumpleaños {{familiar3.cumpleaños}}, edad {{familiar3.edad}}
+
+
+    <footer class="footer bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 h-100 text-center text-lg-start my-auto">
+                    <ul class="list-inline mb-2">
+                        <li class="list-inline-item"><a href="{% url 'About' %}">About</a></li>
+                        <li class="list-inline-item">⋅</li>
+                        <li class="list-inline-item"><a href="#!">Contact</a></li>
+                        <li class="list-inline-item">⋅</li>
+                        <li class="list-inline-item"><a href="#!">Terms of Use</a></li>
+                        <li class="list-inline-item">⋅</li>
+                        <li class="list-inline-item"><a href="#!">Privacy Policy</a></li>
+                    </ul>
+                    <p class="text-muted small mb-4 mb-lg-0">&copy; Ethan Orozco Portfolio  created in August 2022, last updated in August 2022.</p>
+                </div>
+                <div class="col-lg-6 h-100 text-center text-lg-end my-auto">
+                    <ul class="list-inline mb-0">
+                        <li class="list-inline-item me-4">
+                            <a href="#!"><i class="bi-facebook fs-3"></i></a>
+                        </li>
+                        <li class="list-inline-item me-4">
+                            <a href="{% external_url 'https://twitter.com/ethanorozco2' %}"><i class="bi-twitter fs-3"></i></a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="#!"><i class="bi-instagram fs-3"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
