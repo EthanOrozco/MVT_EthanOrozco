@@ -1,11 +1,12 @@
 from django.urls import path
-from Familiares.views import about, familiares, herencias, inicio
-
+from Familiares.views import *
 urlpatterns = [
     path('', inicio, name='FamiliaresInicio'),
     path('info/', familiares, name='FamiliaresInfo'),
     path('about/', about, name= 'About'),   
-    path('herencias/', herencias),
+    path('herencias/', herencias, name='Herencias'),
+    path('Formularios', Formularios, name='Formularios'),
+    path('CursoFormulario/', cursoFormulario, name='CursoFormulario')
 ]
 
 #urlpatterns = patterns('',

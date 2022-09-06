@@ -1,6 +1,8 @@
+from cmath import inf
 import datetime
 from urllib import request
 from django.shortcuts import render
+from Familiares.forms import *
 from Familiares.models import Familiar
 
 # Create your views here.
@@ -31,9 +33,21 @@ def about(request):
     return render(request, 'About.html')
 
 def cursoFormulario(request):
-
-    return render(request, "MVTEthanOrozco/cursoFormulario.html")
+    
+    contexto = {
+        'form': CursoForm()
+    }
+    
+    return render(request, 'cursoFormulario.html', contexto)
 
 def herencias(request):
 
-    return render(request, "herencias.html")
+    return render(request, 'herencias.html')
+
+def Formularios(request):
+
+    contexto = {
+        'form': Familia()
+    }
+    
+    return render(request, 'formulario.html', contexto)
