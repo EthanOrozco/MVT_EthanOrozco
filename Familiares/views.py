@@ -30,10 +30,10 @@ def about(request):
 
     return render(request, 'About.html')
 
-def clima(request):
+def cursoFormulario(request):
 
-    return render(request)
+    return render(request, "MVTEthanOrozco/cursoFormulario.html")
 
-def twitter(request):
+def herencias(request):
 
-    return(request)
+    return render(request, "herencias.html")
