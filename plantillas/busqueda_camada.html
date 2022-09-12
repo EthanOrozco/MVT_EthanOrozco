@@ -1,0 +1,16 @@
+{% extends "padre.html" %}
+
+{% block title %}
+Busqueda Camada
+{% endblock %}
+
+{% block ContenidoQueCambia %}
+
+    <form action="/graci/" method="GET">
+    {% csrf_token %}
+
+        {{ form.as_p }}
+
+        <input type="submit" value="Buscar">
+
+    </form>

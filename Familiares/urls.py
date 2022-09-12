@@ -6,7 +6,9 @@ urlpatterns = [
     path('about/', about, name= 'About'),   
     path('herencias/', herencias, name='Herencias'),
     path('Formularios', Formularios, name='Formularios'),
-    path('CursoFormulario/', cursoFormulario, name='CursoFormulario')
+    path('CursoFormulario/', curso_formulario, name='CursoFormulario'),
+    path('BusquedaCamada/', busqueda_camada , name='BusquedaCamada'),
+    path('busqueda_camada_post/', busqueda_camada_post , name='BusquedaCamadaPost'),
 ]
 
 #urlpatterns = patterns('',

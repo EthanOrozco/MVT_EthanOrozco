@@ -12,3 +12,7 @@ class Familia(forms.Form):
 class Mascota(forms.Form):
     raza = forms.CharField(max_length=40)
     edad = forms.IntegerField()
+
+
+class BusquedaCamadaFormulario(forms.Form):
+    camada = forms.IntegerField()
